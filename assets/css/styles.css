@@ -1,0 +1,261 @@
+
+/** =================== CUSTOM STYLES ==================
+1- Pages global styles
+2- Navbar styles
+3- Sidebar styles
+4- Cart styles
+5- Login Page
+6- @Media 
+**/
+
+/* @Page global styles */
+
+html,
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+.wrapper {
+display: flex;
+height: 100%;
+}
+
+.content {
+flex: 1;
+display: flex;
+flex-direction: column;
+}
+
+.main-content {
+flex: 2;
+background-color: #eee;
+padding: 20px;
+overflow-y: auto;
+}
+
+
+
+
+.footer {
+background-color: white;
+padding: 10px;
+text-align: center;
+}
+
+/* @Navbar */
+.navbar-custom {
+display: flex;
+justify-content: flex-end;
+/* Aligner les éléments à droite */
+align-items: center;
+padding: 0 20px;
+}
+
+.navbar-custom .navbar-text {
+display: flex;
+align-items: center;
+}
+
+.navbar-custom .navbar-text img {
+margin-left: 15px;
+border-radius: 50%;
+}
+
+
+
+/* @Sidebar */
+.sidebar {
+width: 250px;
+background-color: white;
+height: 100%;
+box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.sidebar .icon {
+align-self: flex-start;
+margin-left: 10px;
+margin-top: 10px;
+}
+
+
+hr {
+width: 100%;
+border-top: 1px solid #bbb;
+padding: 0;
+}
+
+.sidebar h5 {
+text-align: center;
+font-weight: bold;
+}
+
+.sidebar ul {
+width: 100%;
+padding: 0;
+}
+
+.sidebar ul li {
+width: 100%;
+}
+
+.sidebar ul li a {
+display: flex;
+align-items: center;
+padding: 10px 20px;
+text-decoration: none;
+color: black;
+}
+
+.sidebar ul li a span {
+margin-right: 15px;
+/* Marge entre l'icône et le texte */
+
+}
+
+.sidebar ul li a span .fas {
+vertical-align: middle;
+/* Aligner verticalement l'icône */
+}
+
+.sidebar ul li a.active {
+border-left: 5px solid #b3c6ff;
+/* Bordure gauche bleu pâle */
+background-color: #f0f0f0;
+}
+
+.sidebar ul li a:hover {
+background-color: #e9ecef;
+}
+
+/* @Cart styles */
+.header {
+
+display: flex;
+/* Utiliser Flexbox pour aligner les éléments */
+align-items: center;
+/* Aligner verticalement les éléments au centre */
+padding: 18px;
+margin: 0;
+/*gap: 27%;
+/* Ajouter une marge de 30% entre les éléments */
+/*padding: 18px;
+border-bottom: 1px solid #eee;*/
+}
+
+.header .btn {
+display: flex;
+align-items: center;
+}
+
+.header .btn .badge {
+margin-left: 5px;
+/* Petite marge entre l'icône et le badge */
+}
+
+
+
+/** ----------------------- Login Page Sytles
+
+**/
+
+.login-container {
+background-color: white;
+padding: 40px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+text-align: center;
+width: 100%;
+max-width: 400px;
+}
+.login-container img {
+width: 100px;
+margin-bottom: 20px;
+}
+.form-group {
+position: relative;
+margin-bottom: 20px;
+}
+.form-group input {
+width: 100%;
+padding-left: 45px;
+height: 45px;
+font-size: 16px;
+}
+.form-group .fa {
+position: absolute;
+left: 10px;
+top: 10px;
+color: #999;
+}
+.form-check {
+text-align: left;
+}
+.social-icons {
+margin-top: 20px;
+}
+.social-icons a {
+margin: 0 10px;
+color: #333;
+}
+.social-icons a:hover {
+color: #007bff;
+}
+
+/** ------------------ End Login page styles ---------------- **/
+
+
+
+
+/** @media responsive styles **/
+
+@media (max-width: 992px) {
+
+    
+    .sidebar{
+        display: none;
+        transition: ease-out 0.3s;
+        }
+        
+    .sidebar .icon img {
+        width: 50px;
+    }
+
+    .sidebar h5 {
+        font-size: 1.2rem;
+    }
+
+    .sidebar ul li a {
+        font-size: 0.9rem;
+    }
+
+    .navbar-custom {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .navbar-custom .navbar-text img {
+        width: 30px;
+    }
+}
+
+
+
+
+
+
+  
+
+            
+
+
+
+
+
+
+
+
